@@ -36,8 +36,9 @@ echo 'deb http://archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/apt/
 echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/apt/sources.list
 echo 'deb http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
 echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
-
 sudo apt-get update -y
+sudo apt-get upgrade -y
+clear
 sudo modprobe tcp_bbr
 sudo sed -i '/net.core.default_qdisc/d' /etc/sysctl.conf
 sudo sed -i '/net.ipv4.tcp_congestion_control/d' /etc/sysctl.conf
@@ -54,4 +55,13 @@ chmod +x /usr/local/bin/update_resolv_conf.sh
 sudo sysctl -p
 sudo systemctl restart systemd-resolved.service
 clear
-echo "Finish"
+echo "
+######  ##          ##       ###
+ ##  #  ##          ##        ##
+ ## #                         ##
+ ####  ###  ## ##  ###   ###  ## ##
+ ## #   ##  ### ##  ##  ##    ### ##
+ ##     ##  ##  ##  ##  ####  ##  ##
+ ##     ##  ##  ##  ##    ##  ##  ##
+####   #### ##  ## #### ###   ##  ##
+"
