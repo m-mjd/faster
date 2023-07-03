@@ -12,9 +12,5 @@
 wget https://github.com/m-mjd/faster/raw/main/faster.sh -O - | bash
 ```
 ## حمایت از ما
-شما می‌توانید از ما حمایت کنید:
-- ستاره بدهید.
-- Tron
-- TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM
-
+شما می‌توانید از ما با ستاره حمایت کنید:
 با تشکر از حمایت شما.
