@@ -9,7 +9,7 @@
 
 ## قابل اجرا در اوبونتو 18 به بالا
 ```sh
-wget https://github.com/m-mjd/faster/raw/main/fastinstall.sh -O - | bash
+wget https://github.com/m-mjd/faster/raw/main/faster.sh -O - | bash
 ```
 ## حمایت از ما
 شما می‌توانید از ما حمایت کنید:
