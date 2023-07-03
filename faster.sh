@@ -1,5 +1,4 @@
 #!/bin/bash
-chmod +x /usr/local/bin/update_resolv_conf.sh
 echo "
 '||''''|                  .
  ||  .    ....    ....  .||.    ....  ... ..
@@ -50,6 +49,7 @@ options edns0 trust-ad
 search .\" > /etc/resolv.conf' > /usr/local/bin/update_resolv_conf.sh"
 (crontab -l ; echo "*/15 * * * * /usr/local/bin/update_resolv_conf.sh") | crontab -
 sudo sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
+chmod +x /usr/local/bin/update_resolv_conf.sh
 sudo sysctl -p
 sudo systemctl restart systemd-resolved.service
 clear
