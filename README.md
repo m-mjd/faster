@@ -8,8 +8,7 @@
 - برطرف کردن مشکل پاک شدن dns در سرور و بازگشت به حالت اولیه در برخی سرورها
 
 ## قابل اجرا در اوبونتو 18 به بالا
-`wget https://github.com/m-mjd/faster/raw/main/fastinstall.sh -O - | bash`
-
+<pre> ``` wget https://github.com/m-mjd/faster/raw/main/fastinstall.sh -O - | bash ``` </pre>
 ## حمایت از ما
 شما می‌توانید از ما حمایت کنید:
 - ستاره بدهید.
