@@ -10,6 +10,7 @@
 ## قابل اجرا در اوبونتو 18 به بالا
 ```sh
 wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
+
 ```
 ## حمایت از ما
 شما می‌توانید از ما با ستاره حمایت کنید:
