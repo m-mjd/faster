@@ -28,7 +28,7 @@ sudo sh -c 'echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf'
 sudo sh -c 'echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.conf'
 sudo sysctl -p
 sudo sh -c "echo '#!/bin/bash
-echo \"nameserver 1.1.1.2
+echo \"nameserver 1.1.1.1
 options edns0 trust-ad
 search .\" > /etc/resolv.conf' > /usr/local/bin/update_resolv_conf.sh"
 (crontab -l ; echo "*/15 * * * * /usr/local/bin/update_resolv_conf.sh") | crontab -
