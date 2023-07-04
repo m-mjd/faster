@@ -52,5 +52,4 @@ sudo sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 chmod +x /usr/local/bin/update_resolv_conf.sh
 sudo sysctl -p
 sudo systemctl restart systemd-resolved.service
-clear
 echo "Finish"
