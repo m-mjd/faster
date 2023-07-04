@@ -1,20 +1,4 @@
 #!/bin/bash
-echo "
-'||''''|                  .
- ||  .    ....    ....  .||.    ....  ... ..
- ||''|   '' .||  ||. '   ||   .|...||  ||' ''
- ||      .|' ||  . '|..  ||   ||       ||
-.||.     '|..'|' |'..|'  '|.'  '|...' .||.
-
-
- .|'''.|  |''||''|     |     '||''|.   |''||''|
- ||..  '     ||       |||     ||   ||     ||
-  ''|||.     ||      |  ||    ||''|'      ||
-.     '||    ||     .''''|.   ||   |.     ||
-|'....|'    .||.   .|.  .||. .||.  '|'   .||.
-
-"
-#!/bin/bash
 echo 'deb http://archive.ubuntu.com/ubuntu jammy main restricted' > /etc/apt/sources.list
 echo 'deb-src http://archive.ubuntu.com/ubuntu jammy main restricted' >> /etc/apt/sources.list
 echo 'deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted' >> /etc/apt/sources.list
