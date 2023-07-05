@@ -20,7 +20,6 @@ echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/
 echo 'deb http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
 echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
 sudo apt-get update -y
-sudo apt-get upgrade -y
 modprobe tcp_cubic
 sudo sed -i '/net.core.default_qdisc/d' /etc/sysctl.conf
 sudo sed -i '/net.ipv4.tcp_congestion_control/d' /etc/sysctl.conf
