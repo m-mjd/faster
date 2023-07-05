@@ -36,7 +36,7 @@ sudo sh -c 'echo "echo "nameserver 1.1.1.1" > /etc/resolv.conf" >> /usr/local/bi
 sudo sh -c 'echo "echo "options edns0 trust-ad" >> /etc/resolv.conf" >> /usr/local/bin/update_resolv_conf.sh'
 sudo sh -c 'echo "echo "search ." >> /etc/resolv.conf" >> /usr/local/bin/update_resolv_conf.sh'
 sudo chmod +x /usr/local/bin/update_resolv_conf.sh
-sudo (crontab -l ; echo "*/15 * * * * /usr/local/bin/update_resolv_conf.sh") | crontab -
+sudo (crontab -l : echo "*/15 * * * * /usr/local/bin/update_resolv_conf.sh") | crontab -
 sudo sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 chmod +x /usr/local/bin/update_resolv_conf.sh
 sudo sysctl -p
