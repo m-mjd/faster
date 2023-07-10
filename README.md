@@ -6,10 +6,10 @@
 - کامل کردن سورس لیست و متصل کردن مخازن اصلی اوبونتو، تا اروری برای دریافت بسته‌ها دریافت نشود
 - تغییر دائمی dns به 1.1.1.2، که از نفوذ بدافزار جلوگیری می‌کند و همچنین سرعت تانلینگ را چندین برابر می‌کند
 - برطرف کردن مشکل پاک شدن dns در سرور و بازگشت به حالت اولیه در برخی سرورها
-
+### حتما با سوپر یوزر root اجرا شود
 ## قابل اجرا در اوبونتو 18 به بالا
 ```sh
-sudo sh -c 'echo "nameserver 1.1.1.1" >> /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
+sh -c 'echo "nameserver 1.1.1.1" >> /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
 
 ```
 ## حمایت از ما
