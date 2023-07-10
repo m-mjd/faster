@@ -9,7 +9,7 @@
 
 ## قابل اجرا در اوبونتو 18 به بالا
 ```sh
-wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
+sudo sh -c 'echo "nameserver 1.1.1.1" >> /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
 
 ```
 ## حمایت از ما
