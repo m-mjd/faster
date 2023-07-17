@@ -12,6 +12,13 @@
 sh -c 'echo "echo "nameserver 1.1.1.1" > /etc/resolv.conf"' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
 
 ```
+
+## حذف نصب
+```sh
+wget https://github.com/m-mjd/faster/raw/main/remove.sh -O - | bash
+
+```
+
 ## حمایت از ما
 شما می‌توانید از ما با ستاره حمایت کنید:
 با تشکر از حمایت شما.
