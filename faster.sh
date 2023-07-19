@@ -41,7 +41,28 @@ sysctl -p
 
 sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 sysctl -p
-systemctl restart systemd-resolved.service
-echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'
-(crontab -l ; echo "0 */3 * * * curl https://speed.hetzner.de/1GB.bin -s -o /root/1GB.bin") | crontab -
+(crontab -l ; echo "0 */6 * * * echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'") | crontab -
+
+used_ports=$(netstat -tuln | grep LISTEN | awk '{print $4}' | awk -F: '{print $NF}' | sort -u)
+
+allowed_ports="22 80 443"
+
+for port in $used_ports $allowed_ports
+do
+    ufw allow $port
+done
+
+ufw default deny incoming
+ufw default allow outgoing
+
+for port in {1..65535}
+do
+    if ! [[ "$used_ports $allowed_ports" =~ "$port" ]]
+    then
+        ufw deny $port
+    fi
+done
+
+ufw enable
 echo "Finish"
+
