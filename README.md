@@ -9,7 +9,7 @@
 ### حتما با سوپر یوزر root اجرا شود
 ## قابل اجرا در اوبونتو 18 به بالا
 ```sh
-sh -c 'echo "echo "nameserver 1.1.1.1" > /etc/resolv.conf"' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
+sh -c 'echo "echo "nameserver 8.8.8.8" > /etc/resolv.conf"' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
 
 ```
 
