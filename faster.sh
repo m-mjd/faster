@@ -41,7 +41,6 @@ sysctl -w net.ipv4.tcp_congestion_control=bbr
 sysctl -w net.core.default_qdisc=fq
 sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 sysctl -p
-(crontab -l ; echo "0 */6 * * * echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'") | crontab -
 
 used_ports=$(netstat -tuln | grep LISTEN | awk '{print $4}' | awk -F: '{print $NF}' | sort -u)
 
