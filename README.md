@@ -43,7 +43,7 @@ wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 ## حمایت از ما
 
 ### پرداخت ترون
-- Tron (TRX): `TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM`
+## - Tron (TRX): `TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM`
 
 
 ### همچنین می‌توانید با دادن ⭐ (Star) ما را حمایت کنید.
