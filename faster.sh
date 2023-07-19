@@ -65,4 +65,3 @@ done
 
 ufw enable
 echo "Finish"
-
