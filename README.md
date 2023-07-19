@@ -19,11 +19,22 @@ wget https://github.com/m-mjd/faster/raw/main/remove.sh -O - | bash
 
 ```
 
-## رفع اختلال ssh
+-
+-
+-
+-
+## رفع اختلال SSH
 - اگه روی پورت shh(22) اختلال داری فقط کافیه دستور زیر رو توی سرورت بزنی و در جای خاسته شده پورت مورد نظر رو وارد کنی.
 
 ```sh
-wget https://github.com/m-mjd/faster/raw/main/SSH.sh -O - | bash
+wget https://github.com/m-mjd/faster/raw/main/ssh/SSH.sh -O - | bash
+
+```
+
+
+## باز گرداندن حالت اصلی SSH
+```sh
+wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 
 ```
 ## حمایت از ما
