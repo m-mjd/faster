@@ -14,7 +14,8 @@
 <br>
 <hr>
 <br>
-### نصب:
+
+### نصب :
 
 ```sh
 sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
