@@ -42,4 +42,8 @@ wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 
 ## حمایت از ما
 
-شما می‌توانید با دادن ستاره (Star) به پروژه‌ی ما، ما را حمایت کنید. با تشکر از حمایت شما.
+- Tron (TRX): `TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM`
+
+
+همچنین می‌توانید با دادن ستاره (Star) به پروژه‌ی ما، ما را حمایت کنید.
+
