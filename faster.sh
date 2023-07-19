@@ -32,13 +32,13 @@ apt-get update -y
 apt install ufw
 apt instal net-tools -y
 apt install resolvconf -y
-modprobe tcp_cubic
-sed -i '/net.core.default_qdisc/d' /etc/sysctl.conf
-sed -i '/net.ipv4.tcp_congestion_control/d' /etc/sysctl.conf
-sh -c 'echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf'
-sh -c 'echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.conf'
+echo "net.core.default_qdisc = fq" | tee -a /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control = bbr" | tee -a /etc/sysctl.conf
 sysctl -p
-
+echo "tcp_bbr" | tee -a /etc/modules-load.d/modules.conf
+modprobe tcp_bbr
+sysctl -w net.ipv4.tcp_congestion_control=bbr
+sysctl -w net.core.default_qdisc=fq
 sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 sysctl -p
 (crontab -l ; echo "0 */6 * * * echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'") | crontab -
