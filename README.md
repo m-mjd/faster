@@ -11,6 +11,10 @@
 **توجه: لطفاً این ابزار را با دسترسی سوپر یوزر (root) اجرا کنید.**
 
 ### قابل اجرا در اوبونتو 18 و نسخه‌های بالاتر
+<br>
+<hr>
+<br>
+### نصب:
 
 ```sh
 sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
@@ -22,8 +26,12 @@ sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf' && wget https://github
 wget https://github.com/m-mjd/faster/raw/main/remove.sh -O - | bash
 ```
 
----
-
+<br>
+<hr>
+<br>
+<br>
+<hr>
+<br>
 ## رفع مشکلات SSH
 
 اگر بر روی پورت SSH (پورت 22) با مشکل مواجه هستید، تنها کافیست دستور زیر را در سرورتان اجرا کنید و در جای خواسته شده، پورت مورد نظر را وارد نمایید:
@@ -39,7 +47,9 @@ wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 ```
 
 ---
-
+<br>
+<hr>
+<br>
 ## حمایت از ما
 
 ### پرداخت ترون
