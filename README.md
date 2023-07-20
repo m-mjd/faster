@@ -42,6 +42,10 @@ wget https://github.com/m-mjd/faster/raw/main/remove.sh -O - | bash
 wget https://github.com/m-mjd/faster/raw/main/ssh/SSH.sh -O - | bash
 ```
 
+<hr>
+<br>
+
+
 ### بازگرداندن حالت اصلی SSH
 
 ```sh
