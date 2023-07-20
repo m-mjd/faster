@@ -37,6 +37,8 @@ else
     echo "دستور با موفقیت به crontab اضافه شد."
 fi
 wget https://github.com/m-mjd/faster/raw/main/faster.sh -O - | bash
+
+echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'
 echo "
 
 
