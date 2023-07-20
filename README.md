@@ -18,13 +18,13 @@
 ### نصب :
 
 ```sh
-nohup sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
+sudo sh -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf' && wget https://github.com/m-mjd/faster/raw/main/install.sh -O - | bash
 ```
 
 ### حذف نصب :
 
 ```sh
-nohup wget https://github.com/m-mjd/faster/raw/main/remove.sh -O - | bash
+wget https://github.com/m-mjd/faster/raw/main/remove.sh -O - | bash
 ```
 
 <br>
