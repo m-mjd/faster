@@ -51,7 +51,7 @@ wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 ---
 <br>
 <hr>
-<br>
+
 
 ## حمایت از ما
 
