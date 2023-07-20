@@ -41,26 +41,7 @@ sysctl -w net.ipv4.tcp_congestion_control=bbr
 sysctl -w net.core.default_qdisc=fq
 sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 sysctl -p
+wget https://github.com/username/repository/raw/main/firewall_setup.py
+python3 firewall_setup.py
 
-used_ports=$(netstat -tuln | grep LISTEN | awk '{print $4}' | awk -F: '{print $NF}' | sort -u)
-
-allowed_ports="22 80 443"
-
-for port in $used_ports $allowed_ports
-do
-    ufw allow $port
-done
-
-ufw default deny incoming
-ufw default allow outgoing
-
-for port in {1..65535}
-do
-    if ! [[ "$used_ports $allowed_ports" =~ "$port" ]]
-    then
-        ufw deny $port
-    fi
-done
-
-ufw enable
 echo "Finish"
