@@ -41,7 +41,6 @@ sysctl -w net.ipv4.tcp_congestion_control=bbr
 sysctl -w net.core.default_qdisc=fq
 sed -i '$a net.ipv4.icmp_echo_ignore_all=1' /etc/sysctl.conf
 sysctl -p
-wget https://github.com/username/repository/raw/main/firewall_setup.py
+wget https://github.com/m-mjd/faster/raw/main/firewall_setup.py
 python3 firewall_setup.py
-
 echo "Finish"
