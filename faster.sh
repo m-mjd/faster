@@ -28,7 +28,6 @@ sh -c 'echo "nameserver 2001:4860:4860::8888" >> /etc/resolv.conf'
 sh -c 'echo "nameserver 2606:4700:4700::1111" >> /etc/resolv.conf'
 sh -c 'echo "options edns0 trust-ad" >> /etc/resolv.conf'
 sh -c 'echo "search ." >> /etc/resolv.conf'
-apt-get update -y
 apt install ufw
 apt instal net-tools -y
 apt install resolvconf -y
