@@ -10,6 +10,7 @@ sh -c 'echo "net.ipv4.tcp_congestion_control = cubic" >> /etc/sysctl.conf'
 sysctl -p
 sh -c 'echo "nameserver 127.0.0.53" >> /etc/resolv.conf'
 systemctl restart systemd-resolved.service
+ufw disable
 echo "All changes have been reverted."
 echo "Do you want to reboot your system? (y/n)"
 read choice
