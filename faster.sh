@@ -31,6 +31,7 @@ sh -c 'echo "search ." >> /etc/resolv.conf'
 apt install ufw
 apt instal net-tools -y
 apt install resolvconf -y
+apt install python3 -y
 echo "net.core.default_qdisc = fq" | tee -a /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control = bbr" | tee -a /etc/sysctl.conf
 sysctl -p
