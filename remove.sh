@@ -12,11 +12,3 @@ sh -c 'echo "nameserver 127.0.0.53" >> /etc/resolv.conf'
 systemctl restart systemd-resolved.service
 ufw disable
 echo "All changes have been reverted."
-echo "Do you want to reboot your system? (y/n)"
-read choice
-if [ "$choice" == "y" ]; then
-    echo "Your system will reboot."
-    reboot
-else
-    echo "Reboot canceled."
-fi
