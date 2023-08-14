@@ -1,24 +1,24 @@
 #!/bin/bash
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy main restricted' > /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy main restricted' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-updates main restricted' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-updates main restricted' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy universe' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy universe' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-updates universe' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-updates universe' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy multiverse' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy multiverse' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-updates multiverse' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-updates multiverse' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-security main restricted' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-security main restricted' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/apt/sources.list
-echo 'deb http://us.archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
-echo 'deb-src http://us.archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy main restricted' > /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy main restricted' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-updates main restricted' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-updates main restricted' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy universe' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy universe' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-updates universe' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-updates universe' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy multiverse' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy multiverse' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-updates multiverse' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-updates multiverse' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-backports main restricted universe multiverse' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-security main restricted' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security main restricted' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/apt/sources.list
+echo 'deb http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
+echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
 sed -i '/nameserver/d' /etc/resolv.conf
 sh -c 'echo "nameserver 208.67.222.222" >> /etc/resolv.conf'
 sh -c 'echo "nameserver 208.67.220.220" >> /etc/resolv.conf'
