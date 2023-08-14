@@ -20,6 +20,8 @@ echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security universe' >> /etc/
 echo 'deb http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
 echo 'deb-src http://archive.ubuntu.com/ubuntu jammy-security multiverse' >> /etc/apt/sources.list
 sed -i '/nameserver/d' /etc/resolv.conf
+sh -c 'echo "nameserver 185.51.200.2" >> /etc/resolv.conf'
+sh -c 'echo "nameserver 178.22.122.100" >> /etc/resolv.conf'
 sh -c 'echo "nameserver 208.67.222.222" >> /etc/resolv.conf'
 sh -c 'echo "nameserver 208.67.220.220" >> /etc/resolv.conf'
 sh -c 'echo "nameserver 95.85.95.85" >> /etc/resolv.conf'
