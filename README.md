@@ -64,9 +64,6 @@ wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 
 
 
-```sh
-TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM
-```
 
 <hr>
 <br>
