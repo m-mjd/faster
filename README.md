@@ -59,12 +59,6 @@ wget https://github.com/m-mjd/faster/raw/main/ssh/remove.sh -O - | bash
 
 ## حمایت از ما
 
-### پرداخت ترون
-### - Tron (TRX): 
-
-
-
-
 <hr>
 <br>
 
